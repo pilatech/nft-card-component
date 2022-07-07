@@ -1,0 +1,104 @@
+* {
+ box-sizing: border-box;
+}
+
+:root {
+ font-size: 10px;
+ --color-soft-blue: hsl(215, 51%, 70%);
+ --color-cyan: hsl(178, 100%, 50%);
+ --color-very-dark-blue-1: hsl(217, 54%, 11%);
+ --color-very-dark-blue-2: hsl(216, 50%, 16%);
+ --color-very-dark-blue-3: hsl(215, 32%, 27%);
+ --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+ font-family: 'Outfit', sans-serif;
+ font-size: 1.6rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ background: var(--color-very-dark-blue-1);
+ color: var(--color-soft-blue);
+ font-weight: 300;
+}
+
+.card {
+  width: 95%;
+  max-width: 37.5rem;
+  background: var(--color-very-dark-blue-2);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.card__hero {
+ border-radius: 2rem;
+ overflow: hidden;
+ margin-bottom: 1.6rem;
+}
+
+.card__hero-image {
+ max-width: 100%;
+ display: block;
+}
+
+.card__title {
+ color: var(--color-white);
+ font-weight: 700;
+ margin-top: 0;
+ margin-bottom: 2rem;
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  line-height: 1.6
+}
+
+.card__stats {
+ display: flex;
+ padding: 0;
+ justify-content: space-between;
+ margin-top: 0;
+ margin-bottom: 1.5rem;
+}
+
+.card__currency {
+ display: flex;
+ align-items: center;
+ color: var(--color-cyan);
+ font-weight: 400;
+ letter-spacing: 1px;
+}
+
+.card__currency-icon {
+ margin-right: .8rem;
+}
+
+.card__time {
+ display: flex;
+ align-items: center;
+ letter-spacing: 1px;
+}
+
+.card__time-icon {
+ margin-right: .8rem;
+}
+
+.card__footer {
+ border-top: 1px solid var(--color-very-dark-blue-3);
+ padding-top: 1.5rem;
+ display: flex;
+ align-items: center;
+}
+
+.card__avatar {
+ width: 4.5rem;
+ margin-right: 1.2rem;
+}
+
+.card__creator {
+ color: var(--color-white);
+ font-weight: inherit;
+}
