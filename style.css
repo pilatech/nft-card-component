@@ -28,7 +28,7 @@ body {
   width: 95%;
   max-width: 37.5rem;
   background: var(--color-very-dark-blue-2);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 2rem;
 }
 
@@ -36,6 +36,17 @@ body {
  border-radius: 2rem;
  overflow: hidden;
  margin-bottom: 1.6rem;
+ cursor: pointer;
+ background: url(images/image-equilibrium.jpg) no-repeat center;
+ background-size: cover;
+ height: 30rem;
+}
+
+.card__hero:hover {
+ background: url(images/icon-view.svg), linear-gradient(hsla(178, 100%, 50%, 0.493), hsla(178, 100%, 50%, 0.493)), url(images/image-equilibrium.jpg);
+ background-size: auto, auto, cover;
+ background-repeat: no-repeat, no-repeat, no-repeat;
+ background-position: center, center, center;
 }
 
 .card__hero-image {
@@ -47,9 +58,13 @@ body {
  color: var(--color-white);
  font-weight: 700;
  margin-top: 0;
- margin-bottom: 2rem;
+ margin-bottom: 1.6rem;
+ cursor: pointer;
 }
 
+.card__title:hover {
+ color: var(--color-cyan);
+}
 .card__text {
   margin-top: 0;
   margin-bottom: 1.6rem;
@@ -83,7 +98,7 @@ body {
 }
 
 .card__time-icon {
- margin-right: .8rem;
+ margin-right: .5rem;
 }
 
 .card__footer {
@@ -101,4 +116,9 @@ body {
 .card__creator {
  color: var(--color-white);
  font-weight: inherit;
+ cursor: pointer;
+}
+
+.card__creator:hover {
+ color: var(--color-cyan);
 }
